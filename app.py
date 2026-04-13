@@ -392,7 +392,7 @@ with tabs[0]:
                 st.subheader("Download Clinical Report")
                 pdf_data = generate_pdf_report(inputs, risk_lbl, pct, df_exp)
                 st.download_button("Download Dengue Clinical Report (PDF)", data=pdf_data,
-                                   file_name="Nexus_Aero_Dengue_Report.pdf", mime="application/pdf")
+                                   file_name="HemaDengue_Pro_Clinical_Report.pdf", mime="application/pdf")
 
             except Exception as e:
                 st.error(f"Prediction Error: {str(e)}")
